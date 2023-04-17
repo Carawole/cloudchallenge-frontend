@@ -1,21 +1,19 @@
-name: Build and Deploy
+name: Sync and Deploy
 on: 
   push:
     branches:
       - main
-
-
+  workflow_dispatch:
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      # Upload to S3
-      - name: sync s3
-        uses: jakejarvis/s3-sync-action@2fb81a9e9fea11e078587911c27754e42e6a6e88
+      # Sync S3
+      - uses: actions/checkout@master
+      - uses: jakejarvis/s3-sync-action@master
         with:
-          args: --exclude '.git*/*' --delete --follow-symlinks --acl public-read
+          args: --exclude '.git*/*' --exclude '.github/*' --delete --follow-symlinks --acl public-read
         env:
-          SOURCE_DIR: "./"
           AWS_REGION: "us-east-1"
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
