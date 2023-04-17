@@ -1,0 +1,29 @@
+.header {
+    background-color: rgb(23, 100, 147);
+    text-align: center;
+    color: white;
+    }
+.name {
+    font-size: 1.5rem;
+}
+h2 {
+    line-height: .5;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+article {
+    border-style:inset;
+}
+.link {
+    color: rgba(224, 215, 215, 0.741);
+    text-decoration: none;
+    transition: color 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: color 0.3s linear;
+
+}
+.link:hover {
+    color: rgb(78, 197, 213);
+}
