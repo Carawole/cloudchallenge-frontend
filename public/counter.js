@@ -24,6 +24,18 @@ fetch('https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_
         number = data.visitor
         document.getElementById("clicks").innerHTML = (number)
     });
+
+    fetch('https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage'
+    , {
+        method: "GET",
+        
+    })
+    .then(response => console.log(response))
+    .then(data => {
+        console.log(data)
+        number = data.visitor
+        document.getElementById("clicks").innerHTML = (number)
+    });
 */
 /*
 let xhr = new XMLHttpRequest();
