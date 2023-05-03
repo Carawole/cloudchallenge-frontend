@@ -27,3 +27,59 @@ article {
 .link:hover {
     color: rgb(78, 197, 213);
 }
+#page {
+    background-color: #4c5661;
+    color: white;
+    font-family: 'Trebuchet MS', 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Tahoma, sans-serif;
+}
+#stage {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 93%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+#home-title {
+    margin: 0;
+    text-align: center;
+}
+#home-subtitle {
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-style: italic;
+    opacity: .9;
+}
+#home-social {
+    font-size: 1.4em;
+    text-align: center;
+    opacity: .8;
+}
+#home-nav {
+    opacity: .8;
+}
+nav {
+    display: block;
+}
+a {
+    text-decoration: none;
+    border: none;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+}
+.fade-in {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100%{ opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

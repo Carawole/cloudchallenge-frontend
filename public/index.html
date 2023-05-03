@@ -4,75 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--
-    <script>
-        (function (d, e) {
-            d[e] = d[e].replace("no-js", "js");
-        })(document.documentElement, "className"); 
-    </script>
-    -->
+    <title>Home Page</title>
 </head>
-<body>
-    <div class="header">
-        <p class="name">Christopher Arawole</p>
-        <p><a class="link" href="mailto:arawolechris@gmail.com">arawolechris@gmail.com</a><br>
-        Mansfield, Tx</p>
-    </div>
-    <section>
-        <article>
-            <h2>Profile</h2>
-            <p>A motivated professional with a commitment to providing reliable and efficient technical solutions that meet the needs of my organization. Eager to contribute my knowledge of cloud computing and computer science to dynamic and innovative projects.</p>
-        </article>
-        <article>
-            <h2>Certifications</h2>
-            <p>AWS Developer - Associate</p>
-        </article>
-        <article>
-            <h2>Projects</h2>
-            <p>Cloud Resume Challenge</p>
-        </article>
-        <article>
-            <h2>Skills</h2>
-            <ul>
-                <li>AWS</li>
-                <li>Python</li>
-                <li>HTML/CSS</li>
-                <li>Javascript</li>
-                <li>Git</li>
-            </ul>
-        </article>
-        <article>
-            <h2>Experience</h2>
-            <p><i>October 2021 - Present<br>Pharmacy Technician, Sam's Club</i>
-                <ul>
-                    <li>Accurately dispensed and maintained documentation on over 200 prescriptions daily in a fast-paced environment</li>
-                    <li>Managed patient records and inventory while ensuring HIPPA compliance</li>
-                </ul>
-                
-            </p>           
-        </article>
-        <article>
-            <h2>Education</h2>
-            <p>B.S. Biology, University of Texas at Arlington</p>
-        </article>
-    </section>
-    <footer>
-        <div>
-        <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("clicks").innerHTML = xhttp.responseText;
-                }
-            };
-            xhttp.open("GET", "https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage");
-            xhttp.send();
-        </script>
-            <h3>Visitors:<span id="clicks"></span></h3>
+<body id="page">
+    <div id="stage" class="fade-in">
+        <h1 id="home-title">Chris Arawole</h1>
+        <p id="home-subtitle">Cloud Engineer</p>
+        <div id="home-social">
+            Placeholder for icons
         </div>
-    </footer>
-
+        <nav id="home-nav">
+                <a href="about.html">About</a>
+                <a href="#">Projects</a>
+        </nav>
+    </div>
 </body>
 </html>
