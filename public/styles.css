@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(23, 100, 147);
+    background-color: gray;
     text-align: center;
     color: white;
     }
@@ -8,6 +8,8 @@
 }
 h2 {
     line-height: .5;
+    text-align: center;
+    color: black;
 }
 section {
     display: flex;
@@ -17,7 +19,7 @@ article {
     border-style:inset;
 }
 .link {
-    color: rgba(224, 215, 215, 0.741);
+    color: #394867;
     text-decoration: none;
     transition: color 0.3s linear;
     -webkit-transition: 0.3s linear;
@@ -25,11 +27,11 @@ article {
 
 }
 .link:hover {
-    color: rgb(78, 197, 213);
+    color: #9ba4b5;
 }
 #page {
-    background-color: #4c5661;
-    color: white;
+    background-color: #f1f6f9;
+    color: #212a3e;
     font-family: 'Trebuchet MS', 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Tahoma, sans-serif;
 }
 #stage {
