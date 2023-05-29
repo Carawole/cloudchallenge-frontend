@@ -8,24 +8,31 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body id="page">
-    <div id="stage" class="fade-in">
+<body class="fade-in" id="background">
+    <header class="header">
+        <nav class="navbar">
+            <a href="about.html">About</a>
+            <a href="#">Projects</a>
+            <div class="dropdown">
+                <button class="dropbtn">Contact</button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/carawole" aria-label="Github" target="_blank">
+                        <i class="fa fa-github"  aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/carawole" aria-label="LinkedIn" target="_blank">
+                        <i class="fa fa-linkedin"  aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:arawolechris@gmail.com" aria-label="Email" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <div id="stage">
         <h1 id="home-title">Chris Arawole</h1>
         <p id="home-subtitle">Cloud Engineer</p>
-        <div id="home-social">
-            <a class="link" href="https://github.com/carawole" aria-label="Github" target="_blank">
-                <i class="fa fa-github" aria-hidden="true">
-                </i>
-            </a>
-            <a class ="link" href="https://linkedin.com/in/carawole" aria-label="LinkedIn" target="_blank">
-                <i class=" fa fa-linkedin" aria-hidden="true">
-                </i>
-            </a>
-        </div>
-        <nav id="home-nav">
-                <a class="link" href="about.html"><center>About</center></a>
-                <a class="link" href="#">Projects</a>
-        </nav>
     </div>
 </body>
 </html>
