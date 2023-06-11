@@ -7,63 +7,89 @@
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="page">
-    <div>
-        <p class="name">Christopher Arawole</p>
-        <p><a class="link" href="mailto:arawolechris@gmail.com">arawolechris@gmail.com</a><br>
-        Mansfield, Tx</p>
-    </div>
-    <section>
-        <article>
-            <h2>Profile</h2>
+<body class="resume">
+    <div class="main-page">
+        <section class="profile">
+            <h1>Christopher Arawole</h1>
+            <h2>Cloud Developer</h2>
             <p>A lifelong learner who's eager to leverage their experience in healthcare and technology to contribute to dynamic and innovative projects. Looking for opportunities to learn new technologies and grow professionally as I pivot my career into full-time software development and cloud infrastructure.</p>
-        </article>
-        <article>
-            <h2>Experience</h2>
-            <h3>Projects:</h3>
-            <h4>Cloud Resume Challenge</h4>
-            <p>
-                This website is running using AWS serverless cloud infrastructure and automated using a CI/CD pipeline that runs on Github Actions. The frontend is written with HTML, CSS and Javascript, deployed to an S3 bucket with enforced HTTPS using Cloudfront. The backend, which is defined in a Terraform image, consists of a REST API created using API Gateway and a Lambda function (running Python) that writes to a DynamoDB table. Read more about my experience making this website <a href="#">here</a>.  
-            </p>
-            <h3>Professional</h3>
-            <p><i>October 2021 - Present<br>Immunizing Pharmacy Technician, Sam's Club</i>
-                <ul>
-                    <li>Efficiently dispensed and maintained documentation on over 200 prescriptions daily in a fast-paced environment</li>
-                    <li>Managed patient records and inventory using pharmacy software applications,  while ensuring HIPPA compliance</li>
-                    <li>Facilitated communication with patients, doctors and healthcare professionals to ensure high-quality patient care</li>
-                </ul>
-                <i>June 2017 - August 2022<br>Private Tutor</i>
-                <ul>
-                    <li>Developed strong problem-solving skills by identifying students' learning challenges and creating personalized learning plans</li>
-                    <li>Communicated complex concepts in simple terms and adapted communication style to fit the needs of individual students</li>
-                    <li>Adapted to feedback, both tacit and explicit, to better meet the needs of students</li>
-                </ul>
-            </p>           
-        </article>
-        <article>
-            <h2>Certifications</h2>
-            <p>AWS Developer - Associate</p>
-        </article>
-        <article>
-            <h2>Education</h2>
-            <p>B.S. Biology - Magna Cum Laude, University of Texas at Arlington</p>
-        </article>
-    </section>
-    <footer>
-        <div>
-        <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("clicks").innerHTML = xhttp.responseText;
-                }
-            };
-            xhttp.open("GET", "https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage");
-            xhttp.send();
-        </script>
-            <h3>Visitors:<span id="clicks"></span></h3>
-        </div>
-    </footer>
 
+        </section>
+        <section>
+            <h3 class="subheading">EXPERIENCE</h3>
+        
+                    <h3 class="subhead">PROJECTS</h3>
+                    <h4>Cloud Resume Challenge</h4>
+                    <p>A website running on AWS serverless cloud infrastructure and automated using a CI/CD pipeline that runs on Github Actions. The frontend is written with HTML, CSS and Javascript, deployed to an S3 bucket with enforced HTTPS using Cloudfront. The backend, which is defined in a Terraform image, consists of a REST API created using API Gateway and a Lambda function (running Python) that writes to a DynamoDB table.</p>
+                
+            
+                    <h3 class="subhead">PROFESSIONAL</h3>
+                    <h4>Certified Pharmacy Technician, Sams's Club - Mansfield, Tx</h4>
+                    <h5>October 2021 - Present</h5>
+                    <ul>
+                        <li>Efficiently dispensed and maintained documentation on over 200 prescriptions daily in a fast-paced environment</li>
+                        <li>Managed patient records and inventory using pharmacy software applications, while ensuring HIPPA compliance</li>
+                        <li>Facilitated communication with patients, doctors and healthcare professionals to ensure high-quality patient care</li>
+                    </ul>
+                
+                    <h4>Private Tutor</h4>
+                    <h5>June 2017 - August 2022</h5>
+                    <ul>
+                        <li>Developed strong problem-solving skills by identifying students' learning challenges and creating personalized learning plans</li>
+                        <li>Communicated complex concepts in simple terms and adapted communication style to fit the needs of individual students</li>
+                        <li>Adapted to feedback, both tacit and explicit, to better meet the needs of students</li>
+                    </ul>
+               
+            
+        </section>
+    </div>
+        <div class="extras">
+            <section>
+                <h3 class="subheading">CONTACT</h3>
+                <ul>
+                    <li>arawolechris@gmail.com</li>
+                    <li>www.chrisarawole.com</li>
+                    <li>linkedin.com/in/carawole</li>
+                    <li>github.com/carawole</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="subheading">TECHNICAL SKILLS</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>AWS</li>
+                    <li>Terraform</li>
+                    <li>Git</li>
+                    <li>Javascript</li>
+                    <li>CI/CD</li>
+                    <li>HTML/CSS</li>
+                    <li>Docker</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="subheading">EDUCATION</h3>
+                <p>University of Texas at Arlington<br>Bachelor of Science in Biology<br>Arlington, Tx - December 2020<br>Awarded Magna Cum Laude
+            </section>
+            <section>
+                <h3 class="subheading">CERTIFICATIONS</h3>
+                <ul>
+                    <li>AWS Certified Developer Associate</li>
+                    <li>CompTIA Network+</li>
+                </ul>
+            </section>
+            <section>
+                <script>
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("clicks").innerHTML = xhttp.responseText;
+                        }
+                    };
+                    xhttp.open("GET", "https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage");
+                    xhttp.send();
+                </script>
+                    <h3>Visitors:<span id="clicks"></span></h3>
+            </section>
+        </div>
 </body>
 </html>

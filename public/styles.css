@@ -14,6 +14,7 @@ body {
 
 }
 
+
 .container {
     position: relative;
     width: 500px;
@@ -357,4 +358,70 @@ a {
 @-webkit-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+section {
+    margin-left: 8%;
+    padding-bottom: 10px;
+}
+
+section h4 {
+    margin-top: 10px;
+}
+
+.subheading {
+    color: #0712ad;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 80%
+    
+}
+
+.subhead {
+    color: #0712ad;
+    padding-top: 10px;
+}
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: none;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    max-width: 650px;
+    min-width: 400px;
+    max-height: 80vh;
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    min-width: fit-content;
+    height: 80vh;
+    background: rgb(203, 203, 203);
+    justify-content: space-between;
+    margin-right: 10%;
+}
+
+.profile h1 {
+    font-size: 2.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: .00em;
+    color: #0712ad;
+}
+
+.profile h2 {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
