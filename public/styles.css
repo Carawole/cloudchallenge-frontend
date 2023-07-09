@@ -5,15 +5,17 @@
     font-family: 'Trebuchet MS', 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Tahoma, sans-serif;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000544;
-
+html, body {
+    height: 100%;
 }
 
+.login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #000544;
+    min-height: 100vh;
+}
 
 .container {
     position: relative;
@@ -360,68 +362,68 @@ a {
     100% { opacity: 1; }
 }
 
+/* CSS for resume page */
+
 section {
     margin-left: 8%;
-    padding-bottom: 10px;
-}
-
-section h4 {
-    margin-top: 10px;
 }
 
 .subheading {
     color: #0712ad;
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 1%;
+    padding-top: .5%;
     width: 80%
     
 }
 
 .subhead {
     color: #0712ad;
-    padding-top: 10px;
+    padding-top: 1%;
 }
 
 .resume {
+    background: white;
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: 100%;
     justify-content: center;
-    min-height: 100vh;
-    background: none;
+    align-items: center;
+    padding-top: 2%;
+    font-size: 1vw;
 }
 
 .main-page {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    max-width: 650px;
-    min-width: 400px;
-    max-height: 80vh;
+    max-width: 50%;
+    overflow: auto;
 }
 
 .extras {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 350px;
-    min-width: fit-content;
-    height: 80vh;
     background: rgb(203, 203, 203);
     justify-content: space-between;
-    margin-right: 10%;
+    min-width: fit-content;
+    max-width: 50%;
+    min-height: fit-content;
 }
 
 .profile h1 {
-    font-size: 2.1em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    letter-spacing: .00em;
+    font-size: 2.1vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    letter-spacing: 0;
     color: #0712ad;
 }
 
 .profile h2 {
-    font-size: 1.2em;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1.2vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.extras h3 {
+    padding-top: 10%;
+}
+
+.resume li {
+    padding: .5%;
 }
