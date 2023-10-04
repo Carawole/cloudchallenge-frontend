@@ -1,6 +1,6 @@
 const pageBox = document.querySelector('.page-box');
 const btnNext = document.querySelector('.btn-next');
-const btnBack= document.querySelector('.btn-back');
+const btnBack = document.querySelector('.btn-back');
 const checkboxPass = document.querySelector('.checkbox-pass');
 const passwordInput = document.querySelector('.password');
 const loginTitle = document.querySelector('.loginTitle-text');
@@ -32,3 +32,50 @@ checkboxPass.onclick = () => {
         passwordInput.type = 'password';
     }
 }
+
+// For projects page
+
+function pageLoad() {
+    dropDownCRC();
+    dropDownCU();
+    dropDownCUA();
+    dropDownTD();
+}
+
+function dropDownCRC() {
+    var x = document.getElementById("CRC");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function dropDownCU() {
+    var x = document.getElementById("CU");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function dropDownTD() {
+    var x = document.getElementById("TD");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function dropDownCUA() {
+    var x = document.getElementById("CUA");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// For projects page 
