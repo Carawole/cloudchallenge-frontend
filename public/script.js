@@ -38,8 +38,7 @@ checkboxPass.onclick = () => {
 function pageLoad() {
     dropDownCRC();
     dropDownCU();
-    dropDownCUA();
-    dropDownTD();
+    dropDownMB();
 }
 
 function dropDownCRC() {
@@ -60,17 +59,8 @@ function dropDownCU() {
   }
 }
 
-function dropDownTD() {
-    var x = document.getElementById("TD");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-function dropDownCUA() {
-    var x = document.getElementById("CUA");
+function dropDownMB() {
+    var x = document.getElementById("MB");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {

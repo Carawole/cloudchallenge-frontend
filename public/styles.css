@@ -10,7 +10,8 @@ html, body {
 }
 
 .project-page {
-    background-image: url(extras/night_sea.jpg);
+   /* background-image: url(extras/night_sea.jpg); */
+    background: #000544;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,6 +21,7 @@ html, body {
     flex-direction: column;
     color: #fff;
     font-size: 32px;
+    margin: 25px 100px;
 }
 
 .project-page button {
@@ -32,6 +34,11 @@ html, body {
 .project-page div {
     border: 2px solid #1ceefe;
     font-size: 20px;
+    color: black;
+    background: white;
+    display: flex;
+    padding: 0 45px;
+    border-radius: 8px;
 }
 
 .login {
