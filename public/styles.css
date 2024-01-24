@@ -618,24 +618,15 @@ a {
 
 /* CSS for resume page */
 
-section {
-    margin-left: 8%;
-}
-
 .subheading {
     color: #0712ad;
     border-bottom: 2px solid black;
     padding-bottom: 1%;
     padding-top: .5%;
-    width: 80%
-    
+    width: 100%; 
 }
 
-.subhead {
-    color: #0712ad;
-    padding-top: 1%;
-}
-
+/*
 .resume {
     background: white;
     display: flex;
@@ -646,6 +637,7 @@ section {
     padding-top: 2%;
     font-size: 1vw;
 }
+
 
 .main-page {
     max-width: 50%;
@@ -680,4 +672,37 @@ section {
 
 .resume li {
     padding: .5%;
+}
+*/
+.resume {
+    display: flex;
+    margin: 4%;
+}
+
+.main-page {
+    
+}
+.extras {
+    
+}
+.profile {
+    
+}
+
+section {
+    align-items: center;
+}
+section>h4 {
+    justify-content: left;
+}
+
+ul#contacts li {
+    display: inline-block;
+    margin: 0;
+    padding: 1em 1em 0 1em;
+    border-right: 1px solid black;
+}
+
+ul#contacts li:last-child {
+    border-right: none;
 }

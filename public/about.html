@@ -11,98 +11,80 @@
     <div class="main-page">
         <section class="profile">
             <h1>Christopher Arawole</h1>
-            <h2>Cloud Developer</h2>
+            <ul id="contacts">
+                <li>chrisarawole.com</li>
+                <li>arawolechris@gmail.com</li>
+                <li>linkedin.com/in/carawole</li>
+                <li>github.com/carawole</li>
+            </ul>
             <p>Motivated healthcare and technology professional with a lifelong dedication to learning and a drive to contribute to dynamic projects. Seeking opportunities in full-time software development and cloud infrastructure to apply expertise, learn new technologies, and achieve professional growth. Known for strong work ethic, adaptability, and commitment to excellence in fast-paced environments.</p>
-
         </section>
         <section>
             <h3 class="subheading">CLOUD DEVELOPMENT EXPERIENCE</h3>
-        
-                    <h3 class="subhead">PROJECTS</h3>
-                    <h4>Cloud Resume Challenge</h4>
-                    <p>A hosted resume that’s integrated with AWS serverless resources and a database backend, and implemented using automation and IaC best practices.</p>
-                    <ul>
-                        <li>Frontend - HTML/CSS, Javascript, Cloudfront, S3, Route53, API Gateway</li>
-                        <li>Backend - Python, Boto3, Terraform, Lambda, DynamoDB, Cloudwatch</li>
-                        <li><strong><u>Connect-US</u></strong> - Designed a feature that authorize/authenticates users to access a private SQL database of patients and medications</li>
-                        <ul style="list-style-type: lower-greek; margin-left: 2em">
-                            <li>MySQL, Amazon RDS, IAM, VPC, Cognito</li>
-                        </ul>
-                    </ul>
-                    <h4>Homelab</h4>
-                    <ul>
-                        <li><strong><u>Active Directory Network</u></strong></li>
-                        <ul style="list-style-type: lower-greek; margin-left: 2em">
-                            <li>Created an Azure Active Directory Network with a Domain Controller utilizing DHCP & DNS, Microsoft Exchange server & 3 Windows 10 client VMs for users</li>
-                            <li>Configured user accounts, credentials, permissions, access rights, storage allocations and single sign-on (SSO) integration</li>
-                            <li>Utilized PowerShell scripting to streamline operational tasks</li>
-                        </ul>
-                    </ul>
-                    <h3 class="subhead">PROFESSIONAL</h3>
-                    <h4>Certified Pharmacy Technician, Sams's Club - Mansfield, Tx</h4>
-                    <h5>October 2021 - Present</h5>
-                    <ul>
-                        <li>Processed and maintained documentation for ~200 prescriptions daily, demonstrating efficiency and attention to detail in a fast-paced environment</li>
-                        <li>Utilized pharmacy software applications to ensure adherence to HIPAA regulations & effectively manage patient records and pharmacy inventory</li>
-                        <li>Facilitated seamless communication between patients, healthcare professionals and insurance providers to delivery of high quality patient care</li>
-                    </ul>
-                
-                    <h4>Private Tutor</h4>
-                    <h5>June 2017 - August 2022</h5>
-                    <ul>
-                        <li>Identified students’ unique learning challenges and tailored learning plans to address their needs, improving average test scores by 20%</li>
-                        <li>Cultivated exceptional problem-solving and communication skills by effectively conveying complex concepts and engaging students in learning experiences</li>
-                    </ul>
-            
-            
+            <h4>Fundwatch | Java (Springboot, JUnit), Jenkins, Packer, Ansible, Terraform, AWS</h4>
+            <ul>
+                <li>Automated the Java application lifecycle using Jenkins, Packer, and Ansible, culminating in the creation of a
+                    standardized Amazon Machine Image (AMI)</li>
+                <li>Orchestrated infrastructure deployment with Terraform, provisioning critical components like MySQL RDS,
+                    Application Load Balancer, and Autoscaling Group to ensure scalability</li>
+                <li>Implemented robust logging strategies, configuring CloudWatch agents for continuous monitoring, and streamlined
+                    continuous integration and deployment through Jenkins for optimal functionality</li>
+            </ul>
+            <h4>Cloud Resume Challenge | AWS, Python, Terraform, JavaScript, HTML/CSS, Git</h4>
+            <ul>
+                <li>Deployed a visually appealing and responsive website, showcasing proficiency in AWS cloud services and web
+                    hosting technologies</li>
+                <li>Streamlined resource management with Terraform, reducing provisioning time by 30%, and achieved a 20% cost
+                    reduction through optimized resource allocation</li>
+                <li>Achieved a 25% reduction in deployment time, emphasizing enhanced system reliability, smooth updates, and
+                    maintenance using Git for version control</li>    
+                <li><strong><u>Connect-Us</u></strong> - Engineered a robust authorization and authentication system using AWS IAM, Cognito, and RDS
+                    with MySQL to secure user access to confidential patient and medication data, guaranteeing data integrity and availability</li>
+            </ul>
+        </section>
+        <section>
+            <h3 class="subheading">TECHNICAL SKILLS</h3>
+        </section>
+        <section>
+            <h3 class="subheading">CERTIFICATIONS</h3>
+            <ul>
+                <li>AWS Certified Developer Associate</li>
+                <li>Microsoft Certified: Azure Administrator Associate</li>
+            </ul>
+        </section>
+        <section>
+            <h3 class="subheading">PROFESSIONAL EXPERIENCE</h3>
+            <h4>Certified Pharmacy Technician, Sams's Club - Mansfield, Tx</h4>
+            <h5>October 2021 - Present</h5>
+            <ul>
+                <li>Processed and maintained documentation for ~200 prescriptions daily, demonstrating efficiency and attention to detail in a fast-paced environment</li>
+                <li>Utilized pharmacy software applications to ensure adherence to HIPAA regulations & effectively manage patient records and pharmacy inventory</li>
+                <li>Facilitated seamless communication between patients, healthcare professionals and insurance providers to delivery of high quality patient care</li>
+            </ul>
+            <h4>Private Tutor</h4>
+            <h5>June 2017 - August 2022</h5>
+            <ul>
+                <li>Identified students’ unique learning challenges and tailored learning plans to address their needs, improving average test scores by 20%</li>
+                <li>Cultivated exceptional problem-solving and communication skills by effectively conveying complex concepts and engaging students in learning experiences</li>
+            </ul>
+        </section>
+        <section>
+            <h3 class="subheading">EDUCATION</h3>
+            <p>University of Texas at Arlington<br>Bachelor of Science in Biology<br>Awarded Magna Cum Laude</p>
+        </section>
+        <section>
+            <script>
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("clicks").innerHTML = xhttp.responseText;
+                    }
+                };
+                xhttp.open("GET", "https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage");
+                xhttp.send();
+            </script>
+                <h3 style="padding-top: 60%;">Visitors:<span id="clicks"></span></h3>
         </section>
     </div>
-        <div class="extras">
-            <section>
-                <h3 class="subheading">CONTACT</h3>
-                <ul>
-                    <li>arawolechris@gmail.com</li>
-                    <li>www.chrisarawole.com</li>
-                    <li>linkedin.com/in/carawole</li>
-                    <li>github.com/carawole</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="subheading">EXPERTISE</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>AWS Services</li>
-                    <li>Networking Infrastructure and Fundamentals</li>
-                    <li>Terraform</li>
-                    <li>Git</li>
-                    <li>CI/CD Pipelines</li>
-                    <li>Jira</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="subheading">EDUCATION</h3>
-                <p>University of Texas at Arlington<br>Bachelor of Science in Biology<br>Awarded Magna Cum Laude</p>
-            </section>
-            <section>
-                <h3 class="subheading">CERTIFICATIONS</h3>
-                <ul>
-                    <li>AWS Certified Developer Associate</li>
-                    <li>Microsoft Certified: Azure Administrator Associate</li>
-                </ul>
-            </section>
-            <section>
-                <script>
-                    var xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                            document.getElementById("clicks").innerHTML = xhttp.responseText;
-                        }
-                    };
-                    xhttp.open("GET", "https://civar6j4p0.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage");
-                    xhttp.send();
-                </script>
-                    <h3 style="padding-top: 60%;">Visitors:<span id="clicks"></span></h3>
-            </section>
-        </div>
 </body>
 </html>
