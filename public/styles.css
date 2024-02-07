@@ -626,54 +626,6 @@ a {
     width: 100%; 
 }
 
-/*
-.resume {
-    background: white;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-    font-size: 1vw;
-}
-
-
-.main-page {
-    max-width: 50%;
-    overflow: auto;
-}
-
-.extras {
-    background: rgb(203, 203, 203);
-    justify-content: space-between;
-    min-width: fit-content;
-    max-width: 50%;
-    min-height: fit-content;
-}
-
-.profile h1 {
-    font-size: 2.1vw;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    letter-spacing: 0;
-    color: #0712ad;
-}
-
-.profile h2 {
-    font-size: 1.2vw;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-.extras h3 {
-    padding-top: 10%;
-}
-
-.resume li {
-    padding: .5%;
-}
-*/
 .resume {
     display: flex;
     margin: 4%;
